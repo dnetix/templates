@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template Viewer Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="your,keywords">
+    <meta name="description" content="Short explanation about this website">
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" href="/{{ template }}/css/style.css">
+</head>
+<body>
+
+{% block prepend %}{% endblock %}
+{% include '../partials/menu.html' %}
+<section class="main-content">
+    {% block content %}{% endblock %}
+</section>
+
+<script src="/plugins/jquery/jquery-1.11.3.min.js"></script>
+{% block append %}{% endblock %}
+
+</body>
+</html>
+

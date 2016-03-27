@@ -1,0 +1,21 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <input type="button" value="GIME SIZE" onclick="giveme()">
+    </div>
+    <div class="hidden-xs">hidden-xs</div>
+    <div class="hidden-sm">hidden-sm</div>
+    <div class="hidden-md">hidden-md</div>
+    <div class="hidden-lg">hidden-lg</div>
+</section>
+
+<script>
+    function giveme(){
+        alert(window.innerWidth);
+    }
+</script>
+
+{% endblock %}

@@ -1,0 +1,459 @@
+@import "variables";
+
+.form-control {
+  font-family: @font-family-base;
+  padding: 5px;
+  border: none;
+  border-bottom: solid 1px @color-gray;
+  box-shadow: none;
+  outline: 0;
+  font-size: 1em;
+  margin-bottom: 1px;
+  background: none;
+  color: @color-dark-gray;
+
+  &:focus {
+    border-bottom: solid 2px @color-blue;
+    margin-bottom: 0;
+  }
+
+  textarea& {
+    border: solid 1px @color-gray;
+  }
+
+  &.input-lg {
+    font-size: 1.4em;
+  }
+  &.input-sm {
+    font-size: 0.8em;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+  &[readonly] {
+    cursor: not-allowed;
+  }
+}
+
+.form, .form-horizontal {
+  .form-group {
+    margin-bottom: 15px;
+
+    .control-label, label {
+      display: block;
+      font-size: 0.7em;
+      color: @color-gray;
+    }
+
+    .form-control {
+      display: block;
+      width: 100%;
+    }
+
+    &:focus {
+      background: @color-red;
+    }
+
+    .help-block {
+      text-align: right;
+      font-size: 0.8em;
+      color: @color-dark-gray;
+    }
+
+    .input-group-prepend {
+      float: left;
+      i {
+        font-size: 1.4em;
+        margin-top: 18px;
+      }
+    }
+
+    .input-group-addon {
+      float: right;
+      margin-top: -33px;
+    }
+
+    .input-group-prepend + .input-group {
+      padding-left: 28px;
+    }
+
+    &.has-feedback {
+      .form-control {
+        padding-right: 25px;
+      }
+      .feedback {
+        .fa;
+        float: right;
+        margin-top: -24px;
+        margin-right: 10px;
+        font-size: 1.2em;
+      }
+    }
+
+    &.has-warning {
+      .control-label, label {
+        color: @input-warning-color;
+      }
+      .form-control {
+        border-bottom: solid 1px @input-warning-color;
+      }
+      .feedback {
+        color: @input-warning-color;
+        &:before { content: "\f06a"; }
+      }
+    }
+
+    &.has-success {
+      .control-label, label {
+        color: @input-success-color;
+      }
+      .form-control {
+        border-bottom: solid 1px @input-success-color;
+      }
+      .feedback {
+        color: @input-success-color;
+        &:before { content: "\f058"; }
+      }
+    }
+
+    &.has-error {
+      .control-label, label {
+        color: @input-error-color;
+      }
+      .form-control {
+        border-bottom: solid 1px @input-error-color;
+      }
+      .feedback {
+        color: @input-error-color;
+        &:before { content: "\f05e"; }
+      }
+    }
+
+  }
+}
+
+.form-horizontal {
+  .form-group {
+    display: table;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: separate;
+
+    .control-label {
+      display: table-cell;
+      vertical-align: top;
+      float: none;
+      width: 20%;
+      font-size: 0.9em;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    .form-control {
+      display: table-cell;
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.checkbox-color(@background, @text){
+  input[type="checkbox"]:checked + span:before {
+    background: @background;
+    color: @text;
+  }
+}
+
+.checkbox, .checkbox-inline {
+  cursor: pointer;
+  display: block;
+
+  span:before {
+    content: "\2713";
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 3px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: @color-white;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+  }
+
+  input[type="checkbox"]:checked + span:before {
+    background: @color-gray;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  &.checkbox-primary {
+    .checkbox-color(@btn-primary-color, @color-white);
+  }
+  &.checkbox-primary-light {
+    .checkbox-color(@btn-primary-light-color, @color-white);
+  }
+  &.checkbox-primary-dark {
+    .checkbox-color(@btn-primary-dark-color, @color-white);
+  }
+  &.checkbox-danger {
+    .checkbox-color(@btn-danger-color, @color-white);
+  }
+  &.checkbox-success {
+    .checkbox-color(@btn-success-color, @color-white);
+  }
+  &.checkbox-warning {
+    .checkbox-color(@btn-warning-color, @color-white);
+  }
+  &.checkbox-gray-dark {
+    .checkbox-color(@btn-gray-dark-color, @color-white);
+  }
+  &.checkbox-gray {
+    .checkbox-color(@btn-gray-color, @color-white);
+  }
+  &.checkbox-gray-light {
+    .checkbox-color(@btn-gray-light-color, @color-white);
+  }
+  &.checkbox-info {
+    .checkbox-color(@btn-info-color, @color-white);
+  }
+  &.checkbox-default-dark {
+    .checkbox-color(@btn-default-dark-color, @color-white);
+  }
+
+}
+
+.checkbox-inline {
+  display: inline-block;
+}
+// Buttons CSS
+
+.btn-color(@color, @text){
+  background: @color;
+  color: @text;
+  &.btn-flat {
+    background: transparent;
+    color: @color;
+    box-shadow: none;
+    &:hover, &.active { background: @color-gray-light; }
+    &.disabled { background: none; color: @color-dark-gray }
+  }
+  &:hover, &.active {
+    background: desaturate(@color, 30%);
+  }
+  &.disabled {
+    background: @color-silver;
+    color: @color-dark-gray;
+  }
+}
+
+.btn-wire(@text, @border){
+  background: none;
+  color: @text;
+  border: @border;
+  &.btn-flat {
+    box-shadow: none;
+    border: none;
+    color: @text;
+  }
+  &:hover, &.active {
+    background: @color-silver;
+  }
+  &.disabled {
+    background: @color-gray;
+    color: @color-dark-gray;
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: @color-gray-light;
+  color: @color-gray;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 2px;
+  box-shadow: @btn-shadow;
+
+  i {
+    margin: 0 10px;
+
+    &.pull-left {
+      margin: 4px 0 0 10px;
+    }
+
+    &.pull-right {
+      margin: 4px 10px 0 0;
+    }
+  }
+
+
+  &:hover {
+    background: @color-silver;
+  }
+
+  &.btn-flat {
+    box-shadow: none;
+    background: none;
+  }
+
+  &.btn-primary {
+    .btn-color(@btn-primary-color, @color-white);
+  }
+  &.btn-primary-light {
+    .btn-color(@btn-primary-light-color, @color-white);
+  }
+  &.btn-primary-dark {
+    .btn-color(@btn-primary-dark-color, @color-white);
+  }
+  &.btn-danger {
+    .btn-color(@btn-danger-color, @color-white);
+  }
+  &.btn-success {
+    .btn-color(@btn-success-color, @color-white);
+  }
+  &.btn-warning {
+    .btn-color(@btn-warning-color, @color-white);
+  }
+  &.btn-gray-dark {
+    .btn-color(@btn-gray-dark-color, @color-white);
+  }
+  &.btn-gray {
+    .btn-color(@btn-gray-color, @color-white);
+  }
+  &.btn-gray-light {
+    .btn-color(@btn-gray-light-color, @color-white);
+  }
+  &.btn-info {
+    .btn-color(@btn-info-color, @color-white);
+  }
+  &.btn-default-light {
+    .btn-wire(@color-dark-gray, solid 1px @color-silver);
+  }
+  &.btn-default-dark {
+    .btn-color(@btn-default-dark-color, @color-white);
+  }
+
+  &.btn-floating {
+    box-shadow: @btn-shadow-floating;
+  }
+  &.btn-raised {
+    box-shadow: @btn-shadow-raised;
+  }
+
+  &.btn-xs {
+    font-size: 0.7em;
+    padding: 3px 5px;
+  }
+
+  &.btn-sm {
+    font-size: 0.85em;
+    padding: 4px 5px;
+  }
+
+  &.btn-lg {
+    font-size: 1.2em;
+    padding: 6px 10px;
+  }
+
+  &.btn-block {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  &.dropdown {
+    position: relative;
+    z-index: 20;
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      outline: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: @color-white;
+      box-shadow: @panel-shadow;
+      display: none;
+
+      li a {
+        display: block;
+        padding: 8px;
+        text-align: left;
+        color: @color-black;
+        text-transform: capitalize;
+
+        i {
+          padding-right: 8px;
+        }
+
+        &:hover {
+          background: @color-silver;
+        }
+      }
+
+      li.divider {
+        height: 1px;
+        background: @color-gray;
+        margin: 2px 0;
+      }
+    }
+
+    &:focus > .dropdown-menu, &.focus > .dropdown-menu {
+      display: block;
+    }
+  }
+}
+
+.btn-group {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+
+  .btn {
+    border-radius: 0;
+    margin-left: -3px;
+    box-shadow: none;
+    padding: 5px 10px;
+
+    input[type="radio"] {
+      display: none;
+      &:checked + i, &:checked ~ span {
+        color: @color-dark-gray;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+      &:checked + i, &:checked ~ span {
+        color: @color-dark-gray;
+      }
+    }
+  }
+
+  &.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+
+    .btn {
+      display: table-cell;
+      float: none;
+      width: 1%;
+    }
+  }
+}
+
+.btn-toolbar {
+  display: inline-block;
+  vertical-align: middle;
+}

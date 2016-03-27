@@ -1,0 +1,192 @@
+@import "variables";
+
+.panel {
+  position: relative;
+  z-index: auto;
+  margin-bottom: 15px;
+  background: @color-white;
+  color: @color-black;
+  border-radius: 2px;
+  box-shadow: @panel-shadow;
+
+  .panel-heading {
+    min-height: 50px;
+    line-height: 46px;
+    vertical-align: middle;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    h3 {
+      padding: 0 0 0 15px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .options {
+      position: absolute;
+      top: 0;
+      right: 10px;
+
+      .btn-group {
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 3px;
+          color: @color-silver;
+          cursor: pointer;
+
+          i {
+            padding: 5px 7px;
+          }
+
+          &:hover {
+            color: @color-gray;
+            i {
+              border-radius: 30px;
+              background: @color-silver;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .panel-heading.panel-heading-xs {
+    min-height: 30px;
+    line-height: 30px;
+    h3 {
+      font-size: 0.8em;
+    }
+  }
+
+  .panel-heading.panel-heading-sm {
+    min-height: 40px;
+    line-height: 40px;
+    h3 {
+      font-size: 0.9em;
+    }
+  }
+
+  .panel-heading.panel-heading-lg {
+    min-height: 60px;
+    line-height: 60px;
+    h3 {
+      font-size: 1.4em;
+    }
+  }
+
+  .panel-body {
+    padding: 5px 10px;
+  }
+
+  .panel-body.scrollable {
+    overflow: auto;
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: @color-silver;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: @color-dark-gray;
+    }
+  }
+
+  // Options
+
+  &.panel-underline {
+    .panel-heading {
+      border-bottom: solid 1px @color-silver;
+    }
+  }
+
+  &.panel-transparent {
+    background: none;
+    box-shadow: none;
+  }
+
+  // Colors
+
+  &.panel-primary {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-primary-color;
+    }
+    .panel-heading {
+      background: @panel-primary-color;
+      color: @color-white;
+    }
+  }
+  &.panel-primary-dark {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-primary-dark-color;
+    }
+    .panel-heading {
+      background: @panel-primary-dark-color;
+      color: @color-white;
+    }
+  }
+  &.panel-danger {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-danger-color;
+    }
+    .panel-heading {
+      background: @panel-danger-color;
+      color: @color-white;
+    }
+  }
+  &.panel-success {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-success-color;
+    }
+    .panel-heading {
+      background: @panel-success-color;
+      color: @color-white;
+    }
+  }
+  &.panel-warning {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-warning-color;
+    }
+    .panel-heading {
+      background: @panel-warning-color;
+      color: @color-white;
+    }
+  }
+  &.panel-gray {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-gray-color;
+    }
+    .panel-heading {
+      background: @panel-gray-color;
+      color: @color-white;
+    }
+  }
+  &.panel-gray-dark {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-gray-dark-color;
+    }
+    .panel-heading {
+      background: @panel-gray-dark-color;
+      color: @color-white;
+    }
+  }
+  &.panel-gray-light {
+    &.panel-outlined {
+      box-shadow: 0 0 6px @panel-gray-light-color;
+    }
+    .panel-heading {
+      background: @panel-gray-light-color;
+      color: @color-black;
+    }
+  }
+
+  .panel-actions {
+    text-align: right;
+    padding: 0 10px 0 0;
+  }
+}

@@ -1,0 +1,582 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-primary">Basic form elements</h1>
+        </div>
+        <div class="col-lg-8">
+            <p class="lead">
+                Basic form elements are text fields that allow the user to input text or select a value.
+                They can be single line or multi-line, and can have an icon.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Basic elements</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <ul class="list-divided">
+                <li>
+                    When the field is focused, there will be a thicker line drawn beneath it.
+                    The label in this example is always visible.
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-offset-1 col-md-8 col-sm-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="regular_input" class="control-label">Regular Input</label>
+                            <input type="text" name="regular_input" id="regular_input" class="form-control"
+                                   placeholder="Regular Input">
+                        </div>
+                        <div class="form-group">
+                            <label for="password_input" class="control-label">Password Input</label>
+                            <input type="text" name="password_input" id="password_input" class="form-control"
+                                   placeholder="Password Input">
+                        </div>
+                        <div class="form-group">
+                            <label for="input_help" class="control-label">Regular Input</label>
+                            <input type="text" name="input_help" id="input_help" class="form-control"
+                                   placeholder="Regular Input wit Help">
+                            <div class="help-block">Help Text</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tooltip_input" class="control-label">Input with tooltip</label>
+                            <input type="text" class="form-control" id="tooltip_input" data-toggle="tooltip"
+                                   data-placement="bottom" data-trigger="hover"
+                                   data-original-title="Example input tooltip text here">
+                        </div>
+                        <div class="form-group">
+                            <label for="regular_select" class="control-label">Regular Select</label>
+                            <select id="regular_select" name="regular_select" class="form-control">
+                                <option value="">Select One</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea_input" class="control-label">Textarea</label>
+                            <textarea name="textarea_input" id="textarea_input" class="form-control" rows="3"
+                                      placeholder="Testing"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Basic elements</em>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Sizes</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like
+                <code>.col-lg-*</code>.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8 col-sm-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <label for="input-lg" class="control-label">Large input</label>
+                            <input type="text" class="form-control input-lg" id="input-lg" placeholder=".input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label for="default_input" class="control-label">Default input</label>
+                            <input type="text" class="form-control" id="default_input" placeholder="Default input">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-sm" class="control-label">Small input</label>
+                            <input type="text" class="form-control input-sm" id="input-sm" placeholder=".input-sm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Control sizing</em>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Input states</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <ul class="list-divided">
+                <li>
+                    Add the <code>disabled</code> boolean attribute on an input to prevent user input and trigger a
+                    slightly different look.
+                </li>
+                <li>
+                    Add the <code>readonly</code> boolean attribute on an input to prevent user input and style the
+                    input as disabled.
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-offset-1 col-md-8 col-sm-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="disabled_input" class="control-label">Disabled state</label>
+                            <input type="text" class="form-control" id="disabled_input" placeholder="Disabled input"
+                                   disabled="disabled">
+                        </div>
+                        <div class="form-group">
+                            <label for="readonly_input" class="control-label">Readonly state</label>
+                            <input type="text" class="form-control" id="readonly_input" value="Readonly input"
+                                   readonly="readonly">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Input states</em>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Validation states</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Material Admin includes validation styles for error, warning, and success states on form controls.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8 col-sm-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form">
+                        <div class="form-group has-warning">
+                            <label for="warning_input" class="control-label">Warning state</label>
+                            <input type="text" class="form-control" id="warning_input">
+                        </div>
+                        <div class="form-group has-warning has-feedback">
+                            <label for="warning_feedback_input" class="control-label">Warning state with icon</label>
+                            <input type="text" class="form-control" id="warning_feedback_input">
+                            <i class="feedback"></i>
+                        </div>
+                        <div class="form-group has-success">
+                            <label for="success_input" class="control-label">Success state</label>
+                            <input type="text" class="form-control" id="success_input">
+                        </div>
+                        <div class="form-group has-success has-feedback">
+                            <label for="success_feedback_input" class="control-label">Success state with icon</label>
+                            <input type="text" class="form-control" id="success_feedback_input">
+                            <i class="feedback"></i>
+                        </div>
+                        <div class="form-group has-error">
+                            <label for="error_input" class="control-label">Error state</label>
+                            <input type="text" class="form-control" id="error_input">
+                        </div>
+                        <div class="form-group has-error has-feedback">
+                            <label for="error_feedback_input" class="control-label">Error state with icon</label>
+                            <input type="text" class="form-control" id="error_feedback_input">
+                            <i class="feedback"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Validation states</em>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Groups</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Extend form controls by adding text or buttons before, after, or on both sides of any text-based
+                <code>&lt;input&gt;</code>.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8 col-sm-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="amount_input" class="control-label">Amount</label>
+                                <input type="text" class="form-control" id="amount_input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-prepend text-primary">
+                                <i class="fa fa-usd"></i>
+                            </div>
+                            <div class="input-group">
+                                <label for="icon_input" class="control-label">Dollars</label>
+                                <input type="text" class="form-control" id="icon_input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="input-group">
+                                <label for="username_input" class="control-label">Username</label>
+                                <input type="text" class="form-control" id="username_input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="group_button" class="control-label">Button</label>
+                                <input type="text" class="form-control" id="group_button">
+                            </div>
+                            <div class="input-group-addon">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Input groups</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Switches</h2>
+        </div>
+        <div class="col-lg-8">
+            <p class="lead">
+                Switches allow the user to select options.
+                There are two kinds: checkboxes and radio buttons.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Checkboxes</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Checkboxes allow the user to select multiple options from a set.
+            </p>
+            <p>
+                If you have multiple on/off options appearing in a list, checkboxes are a good way to preserve
+                space.
+            </p>
+            <p>
+                Checkboxes use animation to communicate focused and pressed states.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Checkboxes</label>
+                            <div class="col-sm-9">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="">
+                                    <span>Default checkbox</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="">
+                                    <span>Another Checkbox</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" disabled="">
+                                    <span>Disabled checkbox</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" disabled="" checked="">
+                                    <span>Disabled and checked checkbox</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Inline checkboxes</label>
+                            <div class="col-sm-9">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="option1"><span>1</span>
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="option2"><span>2</span>
+                                </label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="option3"><span>3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Checkbox styles</label>
+                            <div class="col-sm-9">
+                                <label class="checkbox-inline checkbox-primary">
+                                    <input type="checkbox" value="option1" checked=""><span>Primary</span>
+                                </label>
+                                <label class="checkbox-inline checkbox-success">
+                                    <input type="checkbox" value="option3" checked=""><span>Success</span>
+                                </label>
+                                <label class="checkbox-inline checkbox-warning">
+                                    <input type="checkbox" value="option3" checked=""><span>Warning</span>
+                                </label>
+                                <label class="checkbox-inline checkbox-danger">
+                                    <input type="checkbox" value="option2" checked=""><span>Danger</span>
+                                </label>
+                                <label class="checkbox-inline checkbox-info">
+                                    <input type="checkbox" value="option3" checked=""><span>Info</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Radio buttons</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive
+                selection if you think that the user needs to see all available options side-by-side.
+            </p>
+            <p>
+                Radio buttons use animation to communicate focused and pressed states.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Radio buttons</label>
+                            <div class="col-sm-9">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option1" checked="">
+                                        <span>Default radio button</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option1">
+                                        <span>Another default radio button</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option2" disabled="">
+                                        <span>Disabled radio button</span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios2" value="option3" disabled=""
+                                               checked="">
+                                        <span>Disabled and checkedradio button</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Inline radio buttons</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" value="option1"><span>1</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" value="option2"><span>2</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" value="option3"><span>3</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Radio buttons styles</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline radio-primary">
+                                    <input type="radio" checked=""><span>Primary</span>
+                                </label>
+                                <label class="radio-inline radio-success">
+                                    <input type="radio" checked=""><span>Success</span>
+                                </label>
+                                <label class="radio-inline radio-warning">
+                                    <input type="radio" checked=""><span>Warning</span>
+                                </label>
+                                <label class="radio-inline radio-danger">
+                                    <input type="radio" checked=""><span>Danger</span>
+                                </label>
+                                <label class="radio-inline radio-info">
+                                    <input type="radio" checked=""><span>Info</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Horizontal Form</h2>
+        </div>
+        <div class="col-lg-8">
+            <p class="lead">
+                Allows to set the form as horizontal <code>.form-horizontal</code> to quickly change the orientation
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Elements</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                View the forms horizontal
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="regular_input_h" class="control-label">Regular Input</label>
+                            <input type="text" name="regular_input" id="regular_input_h" class="form-control"
+                                   placeholder="Regular Input">
+                        </div>
+                        <div class="form-group">
+                            <label for="password_input_h" class="control-label">Password Input</label>
+                            <input type="text" name="password_input" id="password_input_h" class="form-control"
+                                   placeholder="Password Input">
+                        </div>
+                        <div class="form-group">
+                            <label for="input_help_h" class="control-label">Regular Input</label>
+                            <input type="text" name="input_help" id="input_help_h" class="form-control"
+                                   placeholder="Regular Input wit Help">
+                            <div class="help-block">Help Text</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tooltip_input_h" class="control-label">Input with tooltip</label>
+                            <input type="text" class="form-control" id="tooltip_input_h" data-toggle="tooltip"
+                                   data-placement="bottom" data-trigger="hover"
+                                   data-original-title="Example input tooltip text here">
+                        </div>
+                        <div class="form-group">
+                            <label for="regular_select_h" class="control-label">Regular Select</label>
+                            <select id="regular_select_h" name="regular_select" class="form-control">
+                                <option value="">Select One</option>
+                                <option value="30">30</option>
+                                <option value="40">40</option>
+                                <option value="50">50</option>
+                                <option value="60">60</option>
+                                <option value="70">70</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea_input_h" class="control-label">Textarea</label>
+                            <textarea name="textarea_input" id="textarea_input_h" class="form-control" rows="3"
+                                      placeholder="Testing"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Basic elements</em>
+
+
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="input-lg_h" class="control-label">Large input</label>
+                            <input type="text" class="form-control input-lg" id="input-lg_h" placeholder=".input-lg">
+                        </div>
+                        <div class="form-group">
+                            <label for="default_input_h" class="control-label">Default input</label>
+                            <input type="text" class="form-control" id="default_input_h" placeholder="Default input">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-sm_h" class="control-label">Small input</label>
+                            <input type="text" class="form-control input-sm" id="input-sm_h" placeholder=".input-sm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Control sizing</em>
+
+
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="disabled_input_h" class="control-label">Disabled state</label>
+                            <input type="text" class="form-control" id="disabled_input_h" placeholder="Disabled input"
+                                   disabled="disabled">
+                        </div>
+                        <div class="form-group">
+                            <label for="readonly_input_h" class="control-label">Readonly state</label>
+                            <input type="text" class="form-control" id="readonly_input_h" value="Readonly input"
+                                   readonly="readonly">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Input states</em>
+
+            <div class="panel">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group has-warning">
+                            <label for="warning_input_h" class="control-label">Warning state</label>
+                            <input type="text" class="form-control" id="warning_input_h">
+                        </div>
+                        <div class="form-group has-warning has-feedback">
+                            <label for="warning_feedback_input_h" class="control-label">Warning state with icon</label>
+                            <input type="text" class="form-control" id="warning_feedback_input_h">
+                            <i class="feedback"></i>
+                        </div>
+                        <div class="form-group has-success">
+                            <label for="success_input_h" class="control-label">Success state</label>
+                            <input type="text" class="form-control" id="success_input_h">
+                        </div>
+                        <div class="form-group has-success has-feedback">
+                            <label for="success_feedback_input_h" class="control-label">Success state with icon</label>
+                            <input type="text" class="form-control" id="success_feedback_input_h">
+                            <i class="feedback"></i>
+                        </div>
+                        <div class="form-group has-error">
+                            <label for="error_input_h" class="control-label">Error state</label>
+                            <input type="text" class="form-control" id="error_input_h">
+                        </div>
+                        <div class="form-group has-error has-feedback">
+                            <label for="error_feedback_input_h" class="control-label">Error state with icon</label>
+                            <input type="text" class="form-control" id="error_feedback_input_h">
+                            <i class="feedback"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <em class="text-caption">Validation states</em>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

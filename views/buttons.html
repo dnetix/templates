@@ -1,0 +1,766 @@
+{% extends 'template/full.html' %}
+
+{% block head %}
+<style>
+    .row {
+        margin: 10px 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-primary">Buttons</h1>
+        </div>
+        <div class="col-lg-8">
+                <p class="lead">
+                    A button consists of text and/or an icon that clearly communicates what action will occur when the user touches it.
+                </p>
+                <p>
+                    There are five types of buttons:
+                </p>
+                <ul>
+                    <li>Default button: a typically rectangular button that does not lift.</li>
+                    <li>Raised button: a typically rectangular button that lifts.</li>
+                    <li>Floating action button: a circular button that lifts.</li>
+                    <li>Icon toggle button: a circular button with a transparent background that does not lift.</li>
+                    <li>Flat button: a button with a transparent background that does not lift.</li>
+                </ul>
+                <p>All types of buttons can emit ink reactions on press.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center height-3">
+                    <button type="button" class="btn btn-flat btn-primary">Button</button>
+                </div>
+            </div>
+            <em class="text-caption">Flat button</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center height-3">
+                    <button type="button" class="btn btn-icon-toggle btn-primary"><i class="fa fa-star"></i></button>
+                </div>
+            </div>
+            <em class="text-caption">Icon toggle button</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center height-3">
+                    <button type="button" class="btn btn-floating-action btn-primary"><i class="fa fa-star"></i></button>
+                </div>
+            </div>
+            <em class="text-caption">Floating action button</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center height-3">
+                    <button type="button" class="btn btn-raised btn-primary">Button</button>
+                </div>
+            </div>
+            <em class="text-caption">Raised button</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center height-3">
+                    <button type="button" class="btn btn-primary">Button</button>
+                </div>
+            </div>
+            <em class="text-caption">Default button</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Types</h4>
+            <p>There are 3 types of buttons by default, (a.btn) (input.btn) (button.btn)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <a href="javascript:;" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <input type="button" class="btn btn-primary" value="Button">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <button class="btn btn-primary">Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>States</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-flat btn-primary">Normal</button></p>
+                    <p><button type="button" class="btn btn-flat btn-primary active">Active</button></p>
+                    <p><button type="button" class="btn btn-flat btn-primary disabled">Disabled</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Flat button states</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-icon-toggle btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-icon-toggle btn-primary active"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-icon-toggle btn-primary disabled"><i class="fa fa-star"></i></button></p>
+                </div>
+            </div>
+            <em class="text-caption">Icon toggle states</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-floating btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-floating btn-primary active"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-floating btn-primary disabled"><i class="fa fa-star"></i></button></p>
+                </div>
+            </div>
+            <em class="text-caption">Floating action button states</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-raised btn-primary">Normal</button></p>
+                    <p><button type="button" class="btn btn-raised btn-primary active">Active</button></p>
+                    <p><button type="button" class="btn btn-raised btn-primary disabled">Disabled</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Raised button states</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-primary">Normal</button></p>
+                    <p><button type="button" class="btn btn-primary active">Active</button></p>
+                    <p><button type="button" class="btn btn-primary disabled">Disabled</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Default button states</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Sizes</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-flat btn-xs btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-flat btn-sm btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-flat btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-flat btn-lg btn-primary">Button</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Flat button sizes</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-icon-toggle btn-xs btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-icon-toggle btn-sm btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-icon-toggle btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-icon-toggle btn-lg btn-primary"><i class="fa fa-star"></i></button></p>
+                </div>
+            </div>
+            <em class="text-caption">Icon toggle sizes</em>
+        </div>
+        <div class="col-md-2 col-sm-4">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-floating-action btn-xs btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-floating-action btn-sm btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-floating-action btn-primary"><i class="fa fa-star"></i></button></p>
+                    <p><button type="button" class="btn btn-floating-action btn-lg btn-primary"><i class="fa fa-star"></i></button></p>
+                </div>
+            </div>
+            <em class="text-caption">Floating action button sizes</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-raised btn-xs btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-raised btn-sm btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-raised btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-raised btn-lg btn-primary">Button</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Raised button sizes</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body text-center">
+                    <p><button type="button" class="btn btn-xs btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-sm btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-primary">Button</button></p>
+                    <p><button type="button" class="btn btn-lg btn-primary">Button</button></p>
+                </div>
+            </div>
+            <em class="text-caption">Default button sizes</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Button colors</h2>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Every button can emit ink ripples when pressed.
+                    You only have to add <code>.ink-reaction</code> to activate this behavior.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-default-light">Default</button></p>
+                            <p><button type="button" class="btn btn-block btn-default">Default</button></p>
+                            <p><button type="button" class="btn btn-block btn-default-dark">Default</button></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-primary-light">Primary</button></p>
+                            <p><button type="button" class="btn btn-block btn-primary">Primary</button></p>
+                            <p><button type="button" class="btn btn-block btn-primary-dark">Primary</button></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-info">Info</button></p>
+                            <p><button type="button" class="btn btn-block btn-success">Success</button></p>
+                            <p><button type="button" class="btn btn-block btn-warning">Warning</button></p>
+                            <p><button type="button" class="btn btn-block btn-danger">Danger</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Button colors</em>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-flat btn-default-light">Default</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-default">Default</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-default-dark">Default</button></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-flat btn-primary-light">Primary</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-primary">Primary</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-primary-dark">Primary</button></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><button type="button" class="btn btn-block btn-flat btn-info">Info</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-success">Success</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-warning">Warning</button></p>
+                            <p><button type="button" class="btn btn-block btn-flat btn-danger">Danger</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Transparent button colors</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Layouts</h2>
+        </div>
+        <div class="col-lg-12">
+            <h4>Regular groups</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Group a series of buttons together on a single line with the button group.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary">2</button>
+                        <button type="button" class="btn btn-primary">3</button>
+                        <button type="button" class="btn btn-primary">4</button>
+                        <button type="button" class="btn btn-primary">5</button>
+                        <button type="button" class="btn btn-warning">6</button>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Button group</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Button toolbar</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="btn-toolbar">
+                            <button type="button" class="btn btn-default"><i class="fa fa-align-left"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-align-center"></i></button>
+                            <button type="button" class="btn btn-default"><i class="fa fa-align-right"></i></button>
+                    </div>
+                    <div class="btn-toolbar">
+                        <button type="button" class="btn btn-default"><i class="fa fa-bold"></i></button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-italic"></i></button>
+                        <button type="button" class="btn btn-default"><i class="fa fa-underline"></i></button>
+                    </div>
+                    <div class="btn-toolbar">
+                        <button type="button" class="btn btn-default dropdown">
+                            <i class="fa fa-wrench"></i> <i class="fa fa-caret-down"></i>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-cut"></i> Cut</a></li>
+                                <li><a href="#"><i class="fa fa-copy"></i> Copy</a></li>
+                                <li><a href="#"><i class="fa fa-paste"></i> Paste</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fa fa-eraser icon-style-danger"></i> Erase</a></li>
+                            </ul>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Toolbar</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Toggle button groups</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    checkbox or radio inputs to enable toggling in their respective styles.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-5 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="btn-group">
+                        <label class="btn btn-primary" for="option_male">
+                            <input type="radio" name="options" id="option_male" value="male" checked>
+                            <i class="fa fa-male fa-fw"></i><span>Male</span>
+                        </label>
+                        <label class="btn btn-primary" for="option_female">
+                            <input type="radio" name="options" id="option_female" value="female">
+                            <i class="fa fa-female fa-fw"></i><span>Female</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Toggle radio groups</em>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="btn-group">
+                        <label class="btn btn-primary">
+                            <input type="checkbox"><i class="fa fa-crosshairs"></i>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox"><i class="fa fa-map-marker"></i>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox"><span>Option</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Toggle checkbox groups</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Justified button groups</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Make a group of buttons stretch at equal sizes to span the entire width of its parent.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="btn-group btn-group-justified">
+                        <a class="btn btn-default-light" role="button">Left</a>
+                        <a class="btn btn-default-light" role="button">Middle</a>
+                        <a class="btn btn-default-light" role="button">Right</a>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Justified</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Button blocks</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-default-light btn-flat btn-block">Sign up / Register</button>
+                    <button type="button" class="btn btn-info btn-block">
+                        <i class="fa fa-reddit"></i>
+                        <span>Post a message</span>
+                    </button>
+                    <button type="button" class="btn btn-warning btn-block">
+                        <i class="fa fa-twitter pull-right"></i>
+                        <span>Tweet your message</span>
+                    </button>
+                    <button type="button" class="btn btn-danger btn-block">
+                        <i class="fa fa-facebook pull-left"></i>
+                        <span>Log in with Facebook</span>
+                    </button>
+                </div>
+            </div>
+            <em class="text-caption">Button blocks</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Behavior</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Ink reaction</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Every button can emit ink ripples when pressed.
+                    You only have to add <code>.ink-reaction</code> to activate this behavior.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-raised btn-primary">Button</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-floating-action btn-primary"><i class="fa fa-star"></i></button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-icon-toggle btn-primary"><i class="fa fa-star"></i></button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-flat btn-primary">Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Click the buttons to see the ink effect</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    The ink ripples take the background color into account so that they are always visible on the button.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel style-default-dark">
+                <div class="panel-body">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-raised btn-default-light">Button</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-floating-action btn-default-light"><i class="fa fa-star"></i></button>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-icon-toggle btn-primary-light"><i class="fa fa-star"></i></button>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-flat btn-primary-light">Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Ink ripples on a dark background</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Buttons with dropdown</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Expand <i class="fa fa-caret-down text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-expand" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Slide <i class="fa fa-caret-down text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-slide" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Dock <i class="fa fa-caret-down text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-dock" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Zoom <i class="fa fa-caret-down text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-zoom" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Dropdown with different open/close animations</em>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Expand up <i class="fa fa-caret-up text-default-light"></i>
+                                    <ul class="dropdown-menu animation-expand" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Slide up <i class="fa fa-caret-up text-default-light"></i>
+                                    <ul class="dropdown-menu animation-slide" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Dock up <i class="fa fa-caret-up text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-dock" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-flat dropdown">
+                                    Zoom up <i class="fa fa-caret-up text-default-light"></i>
+
+                                    <ul class="dropdown-menu animation-zoom" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Dropup with different open/close animations</em>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default-light">Button</button>
+                                <button type="button" class="btn btn-primary dropdown"><i class="fa fa-caret-down"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Button</button>
+                                <button type="button" class="btn btn-primary dropdown"><i class="fa fa-caret-down"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-floating-action btn-sm btn-primary dropdown"><i class="fa fa-star"></i>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-icon-toggle btn-primary dropdown"><i class="fa fa-chevron-down"></i>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Add</a></li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">Copy</a></li>
+                                        <li><a href="#">Print</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-fw fa-times text-danger"></i> Remove item</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Dropdowns on different button styles</em>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Loading buttons</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+                <p>
+                    Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.
+                </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-flat btn-primary btn-loading-state" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">Load example</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-raised btn-primary btn-loading-state" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">Load example</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-floating-action btn-sm btn-primary btn-loading-state" data-loading-text="<i class='fa fa-spinner fa-spin'></i>"><i class="fa fa-star"></i></button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-icon-toggle btn-primary btn-loading-state" data-loading-text="<i class='fa fa-spinner fa-spin'></i>"><i class="fa fa-star"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Click the buttons to see the loading states</em>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

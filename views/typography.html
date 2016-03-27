@@ -1,0 +1,592 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-primary">Typography</h1>
+        </div>
+        <div class="col-lg-8">
+            <p class="lead">
+                Material Admin uses Roboto as the standard typeface.
+                Roboto has been refined extensively to work across the wider set of supported platforms.
+                It is slightly wider and rounder, giving it greater clarity and making it more optimistic.
+            </p>
+            <p class="lead">
+                Roboto supports the languages that use the Latin, Greek, and Cyrillic scripts.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Font styles</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Typographic scale & basic styles</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Too many type sizes and styles at once can wreck any layout.
+                A typographic scale has a limited set of type sizes that work well together along with the layout grid.
+                The basic set of styles are based on a typographic scale of 12, 13, 15, 20, 24 and 34.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="preview">
+                        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                        <em>h1</em>
+                    </div>
+                    <div class="preview">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <em>h2</em>
+                    </div>
+                    <div class="preview">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <em>h3</em>
+                    </div>
+                    <div class="preview">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <em>h4</em>
+                    </div>
+                    <div class="preview">
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                        <em>h5</em>
+                    </div>
+                    <div class="preview">
+                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                        <em>h6</em>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Basic headings</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Scale</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Sometimes you need to scale up or down the text.
+                There are 7 classes you can use for this purpose.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <p class="text-xxxxl">Text xxxx-large</p>
+                    <p class="text-xxxl">Text xxx-large</p>
+                    <p class="text-xxl">Text xx-large</p>
+                    <p class="text-xl">Text x-large</p>
+                    <p class="text-lg">Text large</p>
+                    <p>Text regular</p>
+                    <p class="text-sm">Text small</p>
+                    <p class="text-xs">Text x-small</p>
+                </div>
+            </div>
+            <em class="text-caption">Font style classes</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Weight</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                The weight styles are available through classes so you can use it easily.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <h3 class="text-light">Light text</h3>
+                    <h3 class="text-normal">Normal text</h3>
+                    <h3 class="text-medium">Medium text</h3>
+                    <h3 class="text-bold">Bold text</h3>
+                    <h3 class="text-ultra-bold">Ultra bold text</h3>
+                </div>
+            </div>
+            <em class="text-caption">Font weight classes</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Combinations</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                When you combine the different font classes with the heading classes, you can get the following Material
+                Design styles.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table table-condensed table-no-border">
+                        <tr>
+                            <td class="text-default-light">h1<br/>.text-xxxl<br/>.text-light</td>
+                            <td><h1><span class="text-xxxl text-light">Display 4</span></h1></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h2<br/>.text-xxl</td>
+                            <td><h2><span class="text-xxl">Display 3</span></h2></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h3<br/>.text-xxl<br/>.text-normal</td>
+                            <td><h3><span class="text-xxl text-normal">Display 2</span></h3></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h1</td>
+                            <td><h1>Display 1</h1></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h2</td>
+                            <td><h2>Headline</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h3</td>
+                            <td><h3>Title</h3></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">h4</td>
+                            <td><h4>Subhead</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">Default</td>
+                            <td>Body</td>
+                        </tr>
+                        <tr>
+                            <td class="text-default-light">.text-caption</td>
+                            <td><span class="text-caption no-margin">Caption</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Combining classes</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Body copy</h2>
+        </div>
+        <div class="col-lg-12">
+            <h4>Paragraphs</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                The default font-size is 13px, with a line-height of 24px.
+                This is applied to the <code>&lt;body&gt;</code> and all paragraphs.
+            </p>
+            <p>
+                In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed
+                line-height (12px by default).
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
+                        porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor
+                        <strong>strong</strong>.</p>
+                    <p>
+                        Maecenas sed diam eget risus varius blandit sit amet non magna. <em>Donec id elit non mi porta
+                        gravida at eget metus.</em> Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                        eget lacinia odio sem nec elit.<br/>
+                        <small>This line of text is meant to be treated as fine print.</small>
+                    </p>
+                </div>
+            </div>
+            <em class="text-caption">Paragraphs</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Lead paragraph</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Make a paragraph stand out by adding <code>.lead</code>.
+                It will increase font-size, line-height and the bottom margin.
+                The font receives a thin weight weight.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies
+                        vehicula.</p>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                        ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
+                        porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor.</p>
+                </div>
+            </div>
+            <em class="text-caption">Paragraph with leading text</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Blockquote</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                For quoting blocks of content from another source within your document.
+                Add a <code>&lt;footer&gt;</code> for identifying the source.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <blockquote>
+                        <p>Any man who reads too much and uses his own brain too little falls into lazy habits of
+                            thinking.</p>
+                        <footer>Albert Einstein</footer>
+                    </blockquote>
+                    <blockquote class="blockquote-reverse">
+                        <p>Don't wait around for other people to be happy for you. Any happiness you get you've got to
+                            make yourself.</p>
+                        <footer>Alice Walker</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <em class="text-caption">Blockquote</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Colors</h2>
+        </div>
+        <div class="col-lg-3">
+            <p>
+                Convey meaning through color with the emphasis classes.
+                These may also be applied to links and will darken on hover.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-lg-8">
+            <div class="col-md-4 col-xs-6">
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-default-dark">.text-default-dark</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-default">.text-default</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-default-light">.text-default-light</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-primary-dark">.text-primary-dark</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-primary">.text-primary</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-primary-light">.text-primary-light</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-danger">.text-danger</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-warning">.text-warning</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-success">.text-success</span>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-body small-padding text-center">
+                        <span class="text-info">.text-info</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Lists</h2>
+        </div>
+        <div class="col-lg-12">
+            <h4>Typographic scale & basic styles</h4>
+        </div>
+        <div class="col-lg-3">
+            <p>
+                The weight styles are available through classes so you can use it easily.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-lg-4 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                        <li>Nulla volutpat aliquam velit
+                            <ul>
+                                <li>Phasellus iaculis neque</li>
+                                <li>Purus sodales ultricies</li>
+                                <li>Ac tristique libero volutpat</li>
+                            </ul>
+                        </li>
+                        <li>Aenean sit amet erat nunc</li>
+                        <li>Eget porttitor lorem</li>
+                    </ul>
+                </div>
+            </div>
+            <em class="text-caption">Unordered list</em>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                        <li>Nulla volutpat aliquam velit</li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                        <li>Aenean sit amet erat nunc</li>
+                        <li>Eget porttitor lorem</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Facilisis in pretium nisl aliquet</li>
+                    </ol>
+                </div>
+            </div>
+            <em class="text-caption">Ordered list</em>
+        </div>
+        <div class="col-lg-offset-4 col-lg-4 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Nulla volutpat aliquam velit
+                            <ul>
+                                <li>Phasellus iaculis neque</li>
+                                <li>Ac tristique libero volutpat at</li>
+                            </ul>
+                        </li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                        <li>Aenean sit amet erat nunc</li>
+                    </ul>
+                </div>
+            </div>
+            <em class="text-caption">Unstyled list</em>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <ul class="list-divided">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Integer molestie lorem at massa</li>
+                        <li>Faucibus porta lacus fringilla vel</li>
+                        <li>Aenean sit amet erat nunc</li>
+                    </ul>
+                </div>
+            </div>
+            <em class="text-caption">Divided list</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-offset-4 col-lg-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <dl>
+                        <dt>Description lists</dt>
+                        <dd>A description list is perfect for defining terms.</dd>
+                        <dt>Euismod</dt>
+                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                        <dt>Malesuada porta</dt>
+                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                    </dl>
+                </div>
+            </div>
+            <em class="text-caption">Regular description</em>
+        </div>
+        <div class="col-lg-offset-4 col-lg-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt>Description lists</dt>
+                        <dd>A description list is perfect for defining terms.</dd>
+                        <dt>Euismod</dt>
+                        <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                        <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                        <dt>Malesuada porta</dt>
+                        <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                        <dt>Felis euismod semper eget lacinia</dt>
+                        <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+                            justo sit amet risus.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <em class="text-caption">Horizontal description</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Responsive text columns</h2>
+        </div>
+        <div class="col-lg-8">
+            <p>
+                If a line of text is too long, the user’s eye will have a hard time focusing on the text.
+                This is because the length makes it difficult to get an idea of where the line starts and ends.
+                Furthermore it can be difficult to continue from the correct line in large blocks of text.
+            </p>
+            <p>
+                To regulate the length of a line of text, you can use the text columns classes.
+                As the screen becomes smaller, there will be fewer columns.
+                Therefore, the text remains readable.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Small text columns</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            The class <code>.text-columns-sm</code> will divide the text in the following columns:
+            <ul>
+                <li>4 columns on large screens</li>
+                <li>3 columns on medium screens</li>
+                <li>2 columns on small screens</li>
+                <li>1 column on extra small screens</li>
+            </ul>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="text-columns-sm">
+                        <p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu.
+                            Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id.
+                            Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus
+                            vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum
+                            scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus.
+                            Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale
+                            gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                        <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset
+                            delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata
+                            consequuntur.</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Small text columns</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Regular text columns</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            The class <code>.text-columns</code> will divide the text in the following columns:
+            <ul>
+                <li>3 columns on large screens</li>
+                <li>2 columns on medium screens</li>
+                <li>1 column on small screens</li>
+                <li>1 column on extra small screens</li>
+            </ul>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="text-columns">
+                        <p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu.
+                            Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id.
+                            Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus
+                            vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum
+                            scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus.
+                            Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale
+                            gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                        <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset
+                            delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata
+                            consequuntur.</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Regular text columns</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Large text columns</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            The class <code>.text-columns-lg</code> will divide the text in the following columns:
+            <ul>
+                <li>2 columns on large screens</li>
+                <li>1 column on medium screens</li>
+                <li>1 column on small screens</li>
+                <li>1 column on extra small screens</li>
+            </ul>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="text-columns-lg">
+                        <p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu.
+                            Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id.
+                            Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus
+                            vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum
+                            scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus.
+                            Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale
+                            gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                        <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset
+                            delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata
+                            consequuntur.</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Large text columns</em>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
