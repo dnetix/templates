@@ -1,0 +1,195 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-primary">Tabs</h1>
+        </div>
+        <div class="col-lg-8">
+            <p class="lead">
+                Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Layout</h2>
+        </div>
+        <div class="col-lg-12">
+            <h4>Alignment</h4>
+        </div>
+        <div class="col-md-8">
+            <p>
+                You can align the tabs to the left, right, centered and justified.
+                By default the tabs are left aligned in the header.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="panel panel-tabs">
+                <div class="panel-heading">
+                    <h3>Panel Title</h3>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab">First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab"><p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Default Tabs Example</em>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-tabs panel-danger">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab_2">First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab_2">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab_2">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab_2"><p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab_2"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab_2"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Default Tabs Example No Title</em>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="panel panel-tabs-centered panel-warning">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab_3">First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab_3">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab_3">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab_3"><p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab_3"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab_3"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Centered Tabs Example</em>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-tabs-justified panel-success">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab_4"><i class="fa fa-user"></i> First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab_4">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab_4">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab_4"><p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab_4"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab_4"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Justified Tabs Example</em>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Placement</h4>
+        </div>
+        <div class="col-md-8">
+            <p>
+                Tabs can not only be placed above the content, but also left and right of the content.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-tabs tabs-left">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab_5"><i class="fa fa-user"></i> First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab_5">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab_5">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab_5">
+                        <h1 class="text-primary"><i class="fa fa-fw fa-clock-o"></i> History</h1>
+                        <p class="lead">Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                        <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab_5"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab_5"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Justified Tabs Example</em>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-tabs tabs-right">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:;" data-tab="first_tab_6"><i class="fa fa-user"></i> First Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="second_tab_6">Second Tab</a></li>
+                        <li class=""><a href="javascript:;" data-tab="third_tab_6">Third Tab</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-pane active" id="first_tab_6">
+                        <h1 class="text-primary"><i class="fa fa-fw fa-clock-o"></i> History</h1>
+                        <p class="lead">Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                        <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+                    </div>
+                    <div class="tab-pane" id="second_tab_6"><p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+                    </div>
+                    <div class="tab-pane" id="third_tab_6"><p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+                        <p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+                    </div>
+                </div>
+            </div>
+            <em class="text-caption">Justified Tabs Example</em>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

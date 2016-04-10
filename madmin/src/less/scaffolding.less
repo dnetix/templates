@@ -132,3 +132,15 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+
+@media print {
+  .header {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0 !important;
+  }
+}

@@ -2,20 +2,98 @@
 
 {% block content %}
 
-<section>
-    <div class="container">
-        <input type="button" value="GIME SIZE" onclick="giveme()">
-    </div>
-    <div class="hidden-xs">hidden-xs</div>
-    <div class="hidden-sm">hidden-sm</div>
-    <div class="hidden-md">hidden-md</div>
-    <div class="hidden-lg">hidden-lg</div>
-</section>
+<div class="container">
 
-<script>
-    function giveme(){
-        alert(window.innerWidth);
-    }
-</script>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-primary">Dashboard</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel no-padding">
+                <div class="panel-body">
+                    <div class="alert alert-callout alert-success">
+                        <form action="" class="form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label class="control-label" for="search_client">Buscar Cliente</label>
+                                    <input type="text" name="search_client" id="search_client"
+                                           placeholder="Nombre o identificación" class="form-control"/>
+                                </div>
+                                <div class="input-group-addon">
+                                    <button class="btn btn-primary" type="button">Buscar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel no-padding">
+                <div class="panel-body">
+                    <div class="alert alert-callout alert-info">
+                        <strong class="pull-right text-success text-lg">0,38% <i class="fa fa-line-chart"></i></strong>
+                        <strong class="text-xl">$ 32,829</strong><br>
+                        <span class="opacity-50">Revenue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel no-padding">
+                <div class="panel-body">
+                    <div class="alert alert-callout alert-danger no-margin">
+                        <strong class="pull-right text-danger text-lg">0,18% <i
+                                class="md md-trending-down"></i></strong>
+                        <strong class="text-xl">42.90%</strong><br>
+                        <span class="opacity-50">Bounce rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3>Registration history</h3>
+                    <div class="options">
+                        <div class="btn-group">
+                            <a class="btn-refresh"><i class="fa fa-refresh"></i></a>
+                            <a class="btn-collapse"><i class="fa fa-angle-down"></i></a>
+                            <a class="btn-close"><i class="fa fa-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body no-padding height-9">
+                    <div class="row">
+                        <div class="col-sm-6 hidden-xs">
+                            <div class="text-sm text-default-light">
+                                <p>
+                                    <i class="fa fa-comment text-primary-light"></i>
+                                    The registrations are measured from the time that the redesign was fully implemented
+                                    and after the first e-mailing.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="pull-right text-default-light">
+                                <h2 class="no-margin text-primary-dark"><span class="text-xxl">66.05%</span></h2>
+                                <i class="fa fa-caret-up text-success fa-fw"></i> more registrations
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 {% endblock %}

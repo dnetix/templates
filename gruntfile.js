@@ -19,6 +19,10 @@ module.exports = function(grunt){
                 files: {
                     'madmin/css/style.css' : 'madmin/src/less/style.less'
                 }
+            },
+            build: {
+                options: { compress: true },
+                files: { 'madmin/css/style.min.css': 'madmin/src/less/style.less' }
             }
         }
     });
@@ -26,7 +30,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('default', ['less:dev']);
+    grunt.registerTask('default', ['less:build']);
     grunt.registerTask('dev', ['less:dev']);
 
 };

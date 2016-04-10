@@ -1,0 +1,417 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-primary">Tables</h1>
+        </div>
+        <div class="col-lg-8">
+
+            <p class="lead">
+                Tables can be used to arrange data like text, images, links and other elements into rows and columns.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-primary">Styling</h2>
+        </div>
+        <div class="col-lg-12">
+            <h4>Basic table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Default table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Striped table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <p>
+                Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.
+            </p>
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table table-striped no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Striped table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Banded table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <p>
+                Use <code>.table-banded</code> to add bands to any table within the <code>&lt;tbody&gt;</code>.
+            </p>
+
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table table-banded no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Banded table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Bordered table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <p>
+                Use <code>.table-bordered</code> to display the vertical borders in a <code>&lt;table&gt;</code>.
+            </p>
+
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table table-bordered no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Bordered table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Condensed table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <p>
+                Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.
+            </p>
+
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table table-condensed no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Laurie</td>
+                            <td>Hart</td>
+                            <td>@lau</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Kristin</td>
+                            <td>Poole</td>
+                            <td>@kri</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Melvin</td>
+                            <td>Vega</td>
+                            <td>@vega</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Condensed table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Contextual table</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <p>
+                Use contextual classes to color table rows or individual cells.
+            </p>
+            <ul>
+                <li><code>.info</code> Indicates a neutral informative change or action</li>
+                <li><code>.danger</code> Indicates a dangerous or potentially negative action</li>
+                <li><code>.warning</code> Indicates a warning that might need attention</li>
+                <li><code>.success</code> Indicates a successful or positive action</li>
+                <li><code>.active</code> Applies the hover color to a particular row or cell</li>
+            </ul>
+
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel">
+                <div class="panel-body">
+                    <table class="table no-margin table-hover">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                            <th>Column heading</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="info">
+                            <td>2</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>3</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>4</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="success">
+                            <td>5</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr class="active">
+                            <td>6</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Contextual table</em>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4>Dark background</h4>
+        </div>
+        <div class="col-lg-3 col-md-4">
+
+            <p>
+                If you want to, you can place a table on a dark background
+            </p>
+
+        </div>
+        <div class="col-lg-offset-1 col-md-8">
+            <div class="panel style-primary">
+                <div class="panel-body">
+                    <table class="table table-hover no-margin">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <em class="text-caption">Table on a dark background</em>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

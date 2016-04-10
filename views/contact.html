@@ -1,0 +1,57 @@
+{% extends 'template/full.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-primary">Contact Form</h1>
+        </div>
+    </div>
+
+    <section class="contact">
+        <div class="panel">
+            <div class="panel-body">
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <form class="form">
+                            <div class="form-group">
+                                <label class="control-label" for="name">Nombre</label>
+                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="email">Correo Eléctronico</label>
+                                <input type="text" name="email" id="email" placeholder="Correo Eléctronico" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="content">Contenido</label>
+                                <textarea name="content" id="content" placeholder="Contenido" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Enviar Contacto</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="text-center">
+                            <h2>Dejanos tu comentario <i class="fa fa-comment fa-2x"></i></h2>
+                            <h4>Address</h4>
+                            <div>
+                                2217 Washington Blvd<br>
+                                Washington DC<br>
+                                #(703) 1234 1234<br>
+                                service@company.com<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
